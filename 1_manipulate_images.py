@@ -3,8 +3,8 @@
 from PIL import Image
 import os
 
-folder = "/Users/evemwangi/python_andthe_os/capstone/images"
-new_folder = "/Users/evemwangi/python_andthe_os/capstone/images_new"
+folder = "/~/images"
+new_folder = "/~/images_new"
 
 try:
     os.makedirs(new_folder)
@@ -38,20 +38,10 @@ for infile in os.listdir(folder):
             print("Cannot convert image", infile)"""
 
 """
-im = Image.open("/Users/evemwangi/python_andthe_os/capstone/doe.jpg")
+im = Image.open("/~/doe.jpg")
 # im.rotate(45).show()
-im.rotate(180).resize((640,480)).save("/Users/evemwangi/python_andthe_os/capstone/flipped_and_resized.jpg")
+im.rotate(180).resize((640,480)).save("/~/flipped_and_resized.jpg")
 
 new_im = im.resize((640,480))
-#new_im.save("/Users/evemwangi/python_andthe_os/capstone/resized.jpg")
-"""
-
-"""
-Iterate through each file in the folder
-For each file:
-Rotate the image 90° clockwise
-Resize the image from 192x192 to 128x128
-Save the image to a new folder in .jpeg format
-Use a nano editor for this purpose. You can name the file however you'd like. And make sure to save the updated images in the folder: /opt/icons/
-
+#new_im.save("/~/resized.jpg")
 """
